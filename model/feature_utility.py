@@ -2,7 +2,7 @@ import sys, os
 import cv2
 import numpy as np
 def preprocessing(img, size=(48, 48)):
-    img = cv2.cvtColor(img, cv2.COLOR_RGB2GRAY)
+    img = cv2.cvtColor(img, cv2.COLOR_RGB2GRAY) #a new comment
     img = cv2.resize(img, size).astype(np.float32)
     #img = img.transpose((2, 0, 1))
     # img = np.expand_dims(img, axis=0)
